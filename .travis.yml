@@ -4,12 +4,8 @@ node_js:
 
 cache: npm
 
-script: npm run build
-
 deploy:
- provider: pages
- skip_cleanup: true
- github_token: $GITHUB_TOKEN
- local_dir: dist
+ provider: script
+ script: bash scripts/deploy.sh
  on:
    branch: master
