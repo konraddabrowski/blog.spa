@@ -7,7 +7,8 @@ echo "-----END OPENSSH PRIVATE KEY-----" >> ~/.ssh/githubToServer2078551
 chmod 600 ~/.ssh/githubToServer2078551
 
 echo "Host srv $FTP_HOST" >> ~/.ssh/config
-# echo "  StrictHostKeyChecking no" >> ~/.ssh/config
+echo "  StrictHostKeyChecking no" >> ~/.ssh/config
+echo "  UserKnownHostsFile /dev/null" >> ~/.ssh/config
 # echo "  UserKnownHostsFile ~/.ssh/known_hosts" >> ~/.ssh/config
 echo "  HostName $FTP_HOST" >> ~/.ssh/config
 echo "  Port $FTP_PORT" >> ~/.ssh/config
@@ -17,4 +18,5 @@ chmod 600 ~/.ssh/config
 
 npm run build
 cd dist
-scp -o StrictHostKeyChecking=no -o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -r * srv:public_html/blog
+# scp -o StrictHostKeyChecking=no -o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -r * srv:public_html/blog
+scp -r * srv:public_html/blog
