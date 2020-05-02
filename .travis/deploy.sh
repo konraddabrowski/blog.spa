@@ -1,4 +1,5 @@
 mkdir -p ~/.ssh
+chmod 755 ~/.ssh
 
 echo "-----BEGIN OPENSSH PRIVATE KEY-----" >> ~/.ssh/githubToServer2078551
 echo $GITHUB_TO_SERVER_KEY >> ~/.ssh/githubToServer2078551
