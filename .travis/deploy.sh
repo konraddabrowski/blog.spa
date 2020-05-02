@@ -4,7 +4,7 @@ chmod 755 ~/.ssh
 echo "-----BEGIN OPENSSH PRIVATE KEY-----" >> ~/.ssh/githubToServer2078551
 echo $GITHUB_TO_SERVER_KEY >> ~/.ssh/githubToServer2078551
 echo "-----END OPENSSH PRIVATE KEY-----" >> ~/.ssh/githubToServer2078551
-chmod 600 ~/.ssh/githubToServer
+chmod 600 ~/.ssh/githubToServer2078551
 
 echo "Host srv $FTP_HOST" >> ~/.ssh/config
 echo "  StrictHostKeyChecking no" >> ~/.ssh/config
