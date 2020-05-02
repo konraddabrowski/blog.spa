@@ -6,6 +6,7 @@ echo "-----END OPENSSH PRIVATE KEY-----" >> ~/.ssh/githubToServer
 chmod 600 ~/.ssh/githubToServer
 
 echo "Host srv $FTP_HOST" >> ~/.ssh/config
+echo "  StrictHostKeyChecking no" >> ~/.ssh/config
 echo "  HostName $FTP_HOST" >> ~/.ssh/config
 echo "  Port $FTP_PORT" >> ~/.ssh/config
 echo "  IdentityFile ~/.ssh/githubToServer" >> ~/.ssh/config
