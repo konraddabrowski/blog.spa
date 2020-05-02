@@ -4,7 +4,7 @@ node_js:
 
 before_deploy:
  - git config --global user.email "konrad.dabrowski@arcaim.pl"
- - git config --global user.name "Konrad Dąbrowski (DEPLOY)"
+ - git config --global user.name "Konrad Dabrowski (DEPLOY)"
 
 deploy:
  provider: script

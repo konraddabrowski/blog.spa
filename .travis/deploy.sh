@@ -1,9 +1,9 @@
 mkdir -p ~/.ssh
 
-echo GH_TO_SRV >> ~/.ssh/githubToServer
+echo $GH_TO_SRV >> ~/.ssh/githubToServer
 chmod 600 ~/.ssh/githubToServer
 
-echo SRV_CONFIG >> ~/.ssh/config
+echo $SRV_CONFIG >> ~/.ssh/config
 chmod 600 ~/.ssh/config
 
 cat ~/.ssh/config
