@@ -13,8 +13,6 @@ echo "  IdentityFile ~/.ssh/githubToServer2078551" >> ~/.ssh/config
 echo "  User $FTP_USER" >> ~/.ssh/config
 chmod 600 ~/.ssh/config
 
-ls -l ~/.ssh
-
 npm run build
 cd dist
 scp -r * srv:public_html/blog
