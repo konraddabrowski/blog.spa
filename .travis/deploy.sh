@@ -16,3 +16,4 @@ chmod 600 ~/.ssh/config
 npm run build
 cd dist
 scp -r * srv:public_html/blog
+cd -
