@@ -10,7 +10,7 @@ echo "Host srv $FTP_HOST" >> ~/.ssh/config
 echo "  StrictHostKeyChecking no" >> ~/.ssh/config
 echo "  HostName $FTP_HOST" >> ~/.ssh/config
 echo "  Port $FTP_PORT" >> ~/.ssh/config
-echo "  IdentityFile ~/.ssh/githubToServer2078551" >> ~/.ssh/config
+echo "  IdentityFile ./.ssh/githubToServer2078551" >> ~/.ssh/config
 echo "  User $FTP_USER" >> ~/.ssh/config
 chmod 600 ~/.ssh/config
 
