@@ -2,11 +2,15 @@ language: node_js
 node_js:
  - "node"
 
+before_deploy:
+ - git config --global user.email "konrad.dabrowski@arcaim.pl"
+ - git config --global user.name "Konrad Dąbrowski (DEPLOY)"
+
 deploy:
  provider: script
  skip_cleanup: true
  github_token: $GITHUB_TOKEN
  local_dir: dist
- script: bash scripts/deploy.sh
+ script: bash .travis/deploy.sh
  on:
    branch: master
